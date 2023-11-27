@@ -1,7 +1,12 @@
+import Counter from "./components/Counter";
+
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+    <div className="grid justify-center w-full relative">
+      <div className="absolute right-0">
+        <h1 className="text-xl font-bold text-center mb-4">Counter</h1>
+        <Counter />
+      </div>
+    </div>
+  );
 }
