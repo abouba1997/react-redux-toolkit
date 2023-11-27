@@ -7,11 +7,14 @@ import PostsList from "./components/PostsList";
 export default function App() {
   return (
     <div className="grid justify-center w-full relative">
-      <div className="absolute right-0">
-        <h1 className="text-xl font-bold text-center mb-4">Counter</h1>
+      <div className="fixed right-5 bottom-0">
+        <h1 className="text-base font-bold text-center mb-2">Counter</h1>
         <Counter />
       </div>
-      <div className="absolute left-6 top-2">
+      <div className="mt-2">
+        <h1 className="text-center font-semibold italic mb-2">
+          BLOG POST EXAMPLE WITH REACT-REDUX
+        </h1>
         <AddPostForm />
         <PostsList />
       </div>
